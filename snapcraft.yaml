@@ -1,0 +1,19 @@
+name: micropython
+version: 1.7
+vendor: Adnane Belmadiaf <daker@ubuntu.com>
+summary: A lean and efficient Python implementation for microcontrollers.
+description: MicroPython is a lean and efficient Python implementation for microcontrollers and constrained systems.
+icon: icon.png
+
+apps:
+  micropython:
+    command: bin/micropython
+
+parts:
+  micropython:
+    plugin: make
+    source: https://github.com/micropython/micropython
+    source-type: git
+    source-tag: v1.7
+    source-subdir: unix
+    build-packages: [build-essential, git, libreadline-dev, libffi-dev]
