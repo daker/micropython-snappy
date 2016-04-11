@@ -1,13 +1,13 @@
 name: micropython
-version: 1.7
+version: 1.7.1
 vendor: Adnane Belmadiaf <daker@ubuntu.com>
 summary: A lean and efficient Python implementation for microcontrollers.
 description: MicroPython is a lean and efficient Python implementation for microcontrollers and constrained systems.
 icon: icon.png
 
-apps:
+binaries:
   micropython:
-    command: bin/micropython
+    exec: usr/local/bin/micropython
 
 parts:
   micropython:
