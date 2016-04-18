@@ -7,7 +7,7 @@ icon: icon.png
 
 binaries:
   micropython:
-    exec: usr/local/bin/micropython
+    exec: usr/local/bin/micropython.wrapper
 
 parts:
   micropython:
@@ -16,5 +16,5 @@ parts:
     source-type: git
     source-tag: v1.7
     source-subdir: unix
-    build-packages: [build-essential, git, libreadline-dev, libffi-dev, pkg-conf]
+    build-packages: [build-essential, git, libreadline-dev, libffi-dev, pkg-config]
     stage-packages: [libc6,]
