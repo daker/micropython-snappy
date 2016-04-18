@@ -16,4 +16,5 @@ parts:
     source-type: git
     source-tag: v1.7
     source-subdir: unix
-    build-packages: [build-essential, git, libreadline-dev, libffi-dev]
+    build-packages: [build-essential, git, libreadline-dev, libffi-dev, pkg-conf]
+    stage-packages: [libc6,]
